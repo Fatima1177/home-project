@@ -165,7 +165,6 @@ header>nav>img{
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 1px;
-    
 }
 .txt>.txt-box>.h2-box>a{
     color: #828282;
@@ -230,19 +229,7 @@ header>nav>img{
     position: absolute;
     background-color: #fff;
 }
-
-
-
-
-
 /*box-cards end*/
-
-
-
-
-
-
-
 /*subscribe start*/
 .subscribe{ 
     background: #F58634;
@@ -303,6 +290,53 @@ nav>ul>li{
     color: blue;
 }
 /*subscribe end*/
+/*blog start*/
+.blog-box>.header-blog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 2px 50px 0;
+}
+.blog-box>.header-blog>h1{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    max-width: 300px;
+    color: #1B2021;
+}
+.blog-box>.header-blog>span{
+    font-weight: 500;
+    font-size: 20px;
+}
+.box>.img-blog>.img-txt>h2{
+    
+}
+#admin{
+    
+}
+
+
+
+
+
+/*blog end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*footer-s start*/
 footer{
     padding: 30px 8px;
