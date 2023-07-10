@@ -65,8 +65,9 @@ header>nav>button {
 }
 
 header>nav>button:hover {
-    border-radius: 16px;
-    box-shadow: 0 0 10px #ff6a008f;
+    transform: scale(0.94);
+    border-radius: 9px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.119);
 }
 
 header>nav>img{
@@ -78,6 +79,7 @@ header>nav>img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .header-txt>h1{
     font-size: 45px;
@@ -87,8 +89,6 @@ header>nav>img{
 }
 .header-txt>p{
     max-width: 300px;
-    padding-right: 20px;
-    padding-bottom: 56px;
     font-weight: 400;
     font-size: 17px;
     color: #828282;
@@ -130,7 +130,6 @@ header>nav>img{
     font-size: 16px;
     font-weight: 500;
 }
-
 .filter-box>h3{
     padding-left: 4px;
     color: gray;
@@ -146,9 +145,13 @@ header>nav>img{
     font-weight: 400;
     letter-spacing: .8px;
     cursor: pointer;
-    transition: .3s;
+    transition: .4s;
 }
-
+.filter-wrapper>button:hover{
+    transform: scale(0.94);
+    border-radius: 9px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.119) ;
+}
 /*box-cards start*/
 .txt>.txt-box {
     display: flex;
@@ -162,13 +165,13 @@ header>nav>img{
     padding: 50px 0;
 }
 .txt>.txt-box>.h2-box>h3{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     letter-spacing: 1px;
 }
 .txt>.txt-box>.h2-box>a{
     color: #828282;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: .8px;
 }
@@ -178,12 +181,19 @@ header>nav>img{
 .box-cards>.cards{
     margin: 0 auto;
     position: relative;
+    transition: .5s;
+    padding: 5px;
 }
 .box-cards{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
+}
+.box-cards>.cards:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.119);
+    border-radius: 5px;
 }
 .box-cards>.cards>img{
     max-width: 360px;
@@ -202,13 +212,13 @@ header>nav>img{
 }
 .box-cards>.cards>.card-txt>p{
     color: #828282;
-    font-style: 14px;
+    font-style: 16px;
     font-weight: 400;
     letter-spacing: .8px;
 }
 .box-cards>.cards>.card-txt>span{
     color: #F58634;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 .room-box>p{
@@ -280,7 +290,6 @@ nav{
 nav>h1{
     font-size: 22px;
     color: rebeccapurple;
-
 }
 nav>ul{
     display: flex;
@@ -295,7 +304,7 @@ nav>ul>li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 2px 50px 0;
+    padding: 100px 10px 40px 10px;
 }
 .blog-box>.header-blog>h1{
     font-size: 30px;
@@ -307,36 +316,96 @@ nav>ul>li{
 .blog-box>.header-blog>span{
     font-weight: 500;
     font-size: 20px;
+    border-bottom: 1px solid black;
+}
+.box>.img-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    transition: .5s;
+    padding: 11px;
+}
+.box>.img-blog:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+    transform: scale(.97);
 }
 .box>.img-blog>.img-txt>h2{
-    
+    font-weight: 500;
+    font-style: 24px;
+    letter-spacing: .8px;
+    color: #1B2021;
 }
-#admin{
-    
+.box>.img-blog>.img-txt>span{
+    color: #828282;
+    font-weight: 400;
+    font-style: 16px;
+    letter-spacing: .7px;
 }
-
-
-
-
-
+.admin-p{
+    background: #fff;
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    bottom: 17%;
+    padding: 16px;
+}
+.admin-p>img{
+    width: 50px;
+    height: 50px;
+}
+.admin-p>.admin-txt>h2{
+    font-weight: 500;
+    font-style: 13px;
+    color: #1B2021;
+    letter-spacing: .6px;
+}
+.admin-p>.admin-txt>span{
+    color: #828282;
+    font-weight: 500;
+    font-style: 10px;
+    letter-spacing: .5px;
+}
+.box{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+.box>.big-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+}
+.blog-box>.box>.big-blog>.mini-box{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 8px 12px;
+    transition: .4s;
+}
+.blog-box>.box>.big-blog>.mini-box>.text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.blog-box>.box>.big-blog>.mini-box>.text>h2{
+    font-weight: 500;
+    font-style: 24px;
+    color: #1B2021;
+    letter-spacing: .8px;
+}
+.blog-box>.box>.big-blog>.mini-box>.text>span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #828282;
+    letter-spacing: .7px;
+}
+.blog-box>.box>.big-blog>.mini-box:hover{
+    transform: scale(.95);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+}
 /*blog end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer-s start*/
 footer{
     padding: 30px 8px;
